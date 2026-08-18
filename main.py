@@ -575,11 +575,11 @@ thankyou_phrases = [
 ]
 import os
 
-# Get username from environment variable
-username = os.getenv("USERNAME")  # Windows
+
+username = os.getenv("USERNAME")  
 
 app_paths = {
-    # ===== WINDOWS BUILT-IN APPS =====
+    
     "notepad": "notepad.exe",
     "calculator": "calc.exe",
     "paint": "mspaint.exe",
@@ -617,7 +617,7 @@ app_paths = {
     "mouse properties": "main.cpl",
     "sound": "mmsys.cpl",
     
-    # ===== MICROSOFT OFFICE =====
+    
     "word": r"C:\Program Files\Microsoft Office\root\Office16\WINWORD.EXE",
     "excel": r"C:\Program Files\Microsoft Office\root\Office16\EXCEL.EXE",
     "powerpoint": r"C:\Program Files\Microsoft Office\root\Office16\POWERPNT.EXE",
@@ -629,7 +629,7 @@ app_paths = {
     "skype": r"C:\Program Files\Microsoft Office\root\Office16\SKYPE.EXE",
     "office": r"C:\Program Files\Microsoft Office\root\Office16\WINWORD.EXE",
     
-    # ===== WEB BROWSERS =====
+    
     "chrome": r"C:\Program Files\Google\Chrome\Application\chrome.exe",
     "firefox": r"C:\Program Files\Mozilla Firefox\firefox.exe",
     "edge": r"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe",
@@ -638,7 +638,7 @@ app_paths = {
     "vivaldi": r"C:\Program Files\Vivaldi\Application\vivaldi.exe",
     "tor": r"C:\Program Files\Tor Browser\Browser\firefox.exe",
     
-    # ===== CODE EDITORS & IDES =====
+
     "vscode": rf"C:\Users\{username}\AppData\Local\Programs\Microsoft VS Code\Code.exe",
     "code": rf"C:\Users\{username}\AppData\Local\Programs\Microsoft VS Code\Code.exe",
     "visual studio": r"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\devenv.exe",
@@ -656,7 +656,7 @@ app_paths = {
     "postman": rf"C:\Users\{username}\AppData\Local\Postman\Postman.exe",
     "insomnia": r"C:\Program Files\Insomnia\Insomnia.exe",
     
-    # ===== MEDIA & ENTERTAINMENT =====
+   
     "spotify": rf"C:\Users\{username}\AppData\Local\Spotify\Spotify.exe",
     "vlc": r"C:\Program Files\VideoLAN\VLC\vlc.exe",
     "media player": r"C:\Program Files\Windows Media Player\wmplayer.exe",
@@ -669,7 +669,6 @@ app_paths = {
     "streamlabs": r"C:\Program Files\Streamlabs OBS\Streamlabs OBS.exe",
     "twitch": rf"C:\Users\{username}\AppData\Local\Twitch\Bin\Twitch.exe",
     
-    # ===== GRAPHICS & DESIGN =====
     "photoshop": r"C:\Program Files\Adobe\Adobe Photoshop 2023\Photoshop.exe",
     "illustrator": r"C:\Program Files\Adobe\Adobe Illustrator 2023\Support Files\Contents\Windows\Illustrator.exe",
     "premiere": r"C:\Program Files\Adobe\Adobe Premiere Pro 2023\Adobe Premiere Pro.exe",
@@ -681,7 +680,7 @@ app_paths = {
     "figma": rf"C:\Users\{username}\AppData\Local\Figma\Figma.exe",
     "canva": rf"C:\Users\{username}\AppData\Local\Canva\Canva.exe",
     
-    # ===== COMMUNICATION =====
+   
     "discord": rf"C:\Users\{username}\AppData\Local\Discord\Update.exe",
     "slack": rf"C:\Users\{username}\AppData\Local\slack\slack.exe",
     "telegram": rf"C:\Users\{username}\AppData\Local\Telegram Desktop\Telegram.exe",
@@ -690,7 +689,7 @@ app_paths = {
     "google meet": "https://meet.google.com/",
     "webex": r"C:\Program Files\Webex\Webex.exe",
     
-    # ===== GAMING =====
+    
     "steam": r"C:\Program Files (x86)\Steam\steam.exe",
     "epic games": r"C:\Program Files (x86)\Epic Games\Launcher\Portal\Binaries\Win64\EpicGamesLauncher.exe",
     "riot": rf"C:\Users\{username}\AppData\Local\Riot Games\Riot Client\RiotClientServices.exe",
@@ -700,7 +699,7 @@ app_paths = {
     "unity": r"C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Unity.exe",
     "unreal": r"C:\Program Files\Epic Games\UE_5.2\Engine\Binaries\Win64\UnrealEditor.exe",
     
-    # ===== UTILITIES & SYSTEM =====
+
     "winrar": r"C:\Program Files\WinRAR\WinRAR.exe",
     "7zip": r"C:\Program Files\7-Zip\7zFM.exe",
     "utorrent": rf"C:\Users\{username}\AppData\Roaming\uTorrent\uTorrent.exe",
@@ -723,7 +722,7 @@ app_paths = {
     "windows update": "ms-settings:windowsupdate",
     "system properties": "sysdm.cpl",
     
-    # ===== PROGRAMMING TOOLS =====
+
     "node": r"C:\Program Files\nodejs\node.exe",
     "python": rf"C:\Users\{username}\AppData\Local\Programs\Python\Python311\python.exe",
     "anaconda": rf"C:\Users\{username}\anaconda3\python.exe",
@@ -733,8 +732,7 @@ app_paths = {
     "postgres": r"C:\Program Files\PostgreSQL\15\bin\psql.exe",
     "mongodb": r"C:\Program Files\MongoDB\Server\6.0\bin\mongod.exe",
     "redis": r"C:\Program Files\Redis\redis-server.exe",
-    
-    # ===== MISCELLANEOUS =====
+
     "adobe reader": r"C:\Program Files\Adobe\Acrobat DC\Acrobat\Acrobat.exe",
     "foxit": r"C:\Program Files\Foxit Software\Foxit Reader\FoxitReader.exe",
     "pdf": r"C:\Program Files\Adobe\Acrobat DC\Acrobat\Acrobat.exe",
@@ -752,11 +750,11 @@ def say(text):
         engine.runAndWait()
     except Exception as e:
         print(f"❌ TTS Error: {e}")
-# Load model (download and extract a model first)
+
 model = Model("vosk-model-small-en-us-0.15")
 recognizer = KaldiRecognizer(model, 16000)
 
-# Set up microphone
+
 p = pyaudio.PyAudio()
 stream = p.open(format=pyaudio.paInt16, channels=1,
                 rate=16000, input=True, frames_per_buffer=4000)
