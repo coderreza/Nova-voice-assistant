@@ -43,44 +43,56 @@ Wait for the "Listening..." message and speak clearly into your microphone.
 
 Use voice commands to control your computer.
 
-📝 Command Examples\n
-Opening Files\n
-text\n
-"open file mydocument"     → Opens mydocument.txt, mydocument.docx, etc.\n
-"open file report dot pdf" → Opens report.pdf\n
-Deleting Files\n
-text\n
-"delete file mydocument"   → Deletes mydocument.txt, mydocument.docx, etc.\n
-"delete file image dot png" → Deletes image.png\n
-Launching Apps\n
-text\n
-"open spotify"             → Opens Spotify\n
-"open chrome"              → Opens Google Chrome\n
-"open vscode"              → Opens VS Code\n
-"open notepad"             → Opens Notepad\n
-"open calculator"          → Opens Calculator\n
-Searching the Web\n
-text\n
-"search python tutorial"   → Opens Google search for "python tutorial"\n
-"search cute cats"         → Searches Google for "cute cats"\n
-Navigating Folders\n
-text\n
-"go to downloads"          → Navigates to Downloads folder\n
-"go to documents"          → Navigates to Documents folder\n
-"show files"               → Lists all files in current folder\n
-"go back"                  → Goes to parent folder\n
-"where am i"               → Shows current folder path\n
-Voice Typing\n
-text\n
-"write hello world"        → Types "hello world" at cursor position\n
-"write I love Python"      → Types "I love Python"\n
-Conversations\n
-text\n
-"hello"                    → NOVA responds "hi there"\n
-"thank you"                → NOVA responds "you're welcome"\n
-"who are you"              → NOVA introduces itself\n
-"goodbye"                  → Exits the program\n
-google search:\n
+📝 Command Examples
+
+Opening Files  
+
+"open file mydocument"     → Opens mydocument.txt, mydocument.docx, etc.  
+"open file report dot pdf" → Opens report.pdf  
+
+Deleting Files  
+
+"delete file mydocument"   → Deletes mydocument.txt, mydocument.docx, etc.  
+"delete file image dot png" → Deletes image.png  
+
+Launching Apps  
+
+"open spotify"             → Opens Spotify  
+"open chrome"              → Opens Google Chrome  
+"open vscode"              → Opens VS Code  
+"open notepad"             → Opens Notepad  
+"open calculator"          → Opens Calculator  
+
+Searching the Web  
+
+"search python tutorial"   → Opens Google search for "python tutorial"  
+"search cute cats"         → Searches Google for "cute cats"  
+
+Navigating Folders  
+
+"go to downloads"          → Navigates to Downloads folder  
+"go to documents"          → Navigates to Documents folder  
+"show files"               → Lists all files in current folder  
+"go back"                  → Goes to parent folder  
+"where am i"               → Shows current folder path  
+
+Voice Typing  
+
+"write hello world"        → Types "hello world" at cursor position  
+"write I love Python"      → Types "I love Python"  
+
+Conversations  
+
+"hello"                    → NOVA responds "hi there"  
+"thank you"                → NOVA responds "you're welcome"  
+"who are you"              → NOVA introduces itself  
+"goodbye"                  → Exits the program  
+
+Wikipedia
+
+"what is [the thing that you want to know]"
+
+**Google Search:**  
 "search [the word or sentence that you want to search]"
 💡 Tips for Best Results
 Speak clearly - NOVA uses offline speech recognition, so clear speech works best.
