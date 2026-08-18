@@ -78,6 +78,8 @@ text
 "thank you"                → NOVA responds "you're welcome"
 "who are you"              → NOVA introduces itself
 "goodbye"                  → Exits the program
+google search:
+"search [the word or sentence that you wanna search]"
 💡 Tips for Best Results
 Speak clearly - NOVA uses offline speech recognition, so clear speech works best.
 
