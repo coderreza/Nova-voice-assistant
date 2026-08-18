@@ -7,6 +7,7 @@ import pyttsx3
 import urllib.parse
 import webbrowser
 import pyautogui
+import wikipedia
 
 goodbye_phrases = [
     # English
@@ -742,6 +743,7 @@ app_paths = {
     "virtualbox": r"C:\Program Files\Oracle\VirtualBox\VirtualBox.exe",
     "vmware": r"C:\Program Files (x86)\VMware\VMware Workstation\vmware.exe",
 }
+wikipedia.set_lang("en")
 def say(text):
     """Speak text using pyttsx3"""
     try:
@@ -869,6 +871,18 @@ while True:
                     if i in text:
                         text = text.replace(i, "")
                 pyautogui.write(text)
+            elif commandstr.startswith("what is "):
+                try:
+                    topic = commandstr.replace("what is ","")
+                    topiccut = topic.strip()
+                    for i in filler_words:
+                        if i in topiccut:
+                            topic = topic.replace(i, "")
+                    response = wikipedia.summary(topic)
+                    print(f"zar: {response}")
+                    say(response)
+                except:
+                    say("sorry, an error occured. try again later")
 
     except KeyboardInterrupt:
         say("goodbye")
