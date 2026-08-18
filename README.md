@@ -10,6 +10,7 @@ This is a voice assistant called Nova made by codderreza(me).
 | ✍️ **Voice Typing** | Type text with voice commands |
 | 💬 **Text-to-Speech** | Voice feedback using pyttsx3 |
 | 🎯 **Greetings** | Recognizes hello, goodbye, thank you |
+| **wikipedia search**| searches the wikipedia|
 _______________________________________________________________________________
 ## 🛠️ Technologies Used
 
