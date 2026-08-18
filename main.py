@@ -573,7 +573,7 @@ thankyou_phrases = [
     "you're a legend",
     "appreciate you",
 ]
-import os
+
 
 
 username = os.getenv("USERNAME")  
@@ -842,7 +842,7 @@ while True:
                 print(os.getcwd())
                 say(f"you are at {os.getcwd()}")
             elif commandstr == "who are you":
-                say("im a talking tool named Nova made by coderreza")
+                say("im a talking tool named Zar made by coderreza")
             elif commandstr == "":
                 continue
             elif commandstr in hello_phrases:
